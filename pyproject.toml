@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cranix-ms365"
+dynamic = ["version"]
+description = "Microsoft 365 synchronization helpers for CRANIX"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Peter Varkoly", email = "pvarkoly@cephalix.eu" },
+]
+requires-python = ">=3.11"
+dependencies = [
+    "cranix",
+    "requests",
+    "bashconfigparser",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+Homepage = "https://github.com/Cranix-Solutions/cranix-python-ms365"
+
+[tool.setuptools.dynamic]
+version = { attr = "cranix_ms365._version.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["cranix_ms365*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

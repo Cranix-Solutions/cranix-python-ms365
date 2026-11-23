@@ -1,0 +1,9 @@
+cranix_ms365/__pycache__/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+__pycache__/
+*.pyc
