@@ -1,0 +1,91 @@
+## Type:        string
+## Default:
+# The licence key for the teachers
+LICENCE_TEACHERS=""
+
+## Type:        string
+## Default:
+# The licence key for the students
+# You may provide licences for other groups to in form of LICENCE_<GROUPNAME>
+LICENCE_STUDENTS=""
+
+## Type:        string
+## Default:
+# The domain name in Office365 for students and for teachers if not SCHOOL_DOMAIN
+OFFICE_DOMAIN=""
+
+## Type:        string
+## Default:
+# The domain name in Office365 for teachers if not SCHOOL_DOMAIN
+DOMAIN_TEACHERS=""
+
+## Type:        string
+## Default:
+# The domain name in Office365 for students if not SCHOOL_DOMAIN
+DOMAIN_STUDENTS=""
+
+## Type:        string
+## Default: students,teachers
+# Colom separated list of roles which must be synchronized to office365
+ROLES_TO_SYNCHRONIZE="students,teachers"
+
+## Type:        string
+## Default:     class
+#  Coma separated list of grouptypes wich must be synched to ms365
+
+GROUPS_TO_SYNCHRONIZE="class"
+
+## Type:        string
+## Default:
+# The country name in Office365
+COUNTRY="Germany"
+
+## Type:        string
+## Default:
+# The ISO country code, Alpha 2
+COUNTRYISO="DE"
+
+## Type:        string
+## Default:
+# The city name in Office365
+CITY=""
+
+## Type:        string
+## Default:
+# The state (Bundesland/Kanton) name in Office365
+STATE=""
+
+## Type:        string
+## Default:
+# The postal code in Office365
+POSTALCODE=""
+
+## Type:        yesno
+## Default:
+# Should the OSS synchronize the user passwords in Office365
+SYNC_PASSWORD="yes"
+
+## Type:        yesno
+## Default: no
+# Should the OSS create pdf reports for the sysadmins?
+CREATE_PDF="no"
+
+## Type:        yesno
+## Default: yes
+# Should the OSS create welcom letters to the users?
+CREATE_WELCOME_LETTER="no"
+
+## Type: string
+#- Dofault:
+# Secret to get Access token
+SECRET=""
+
+# Type;        string
+# Default:
+# Tenant-ID of school
+TENANT_ID=""
+
+## Type;        string
+## Default:
+## Client-ID of sync application
+CLIENT_ID=""
