@@ -60,6 +60,7 @@ sed -i "s/^__version__ =.*$/__version__ = \"$VERSION\"/" cranix_ms365/_version.p
 if [ -f cranix_ms365.egg-info/PKG-INFO ]; then
     sed -i "s/^Version: .*$/Version: $VERSION/" cranix_ms365.egg-info/PKG-INFO
 fi
+sed -i "s/^Version:.*$/Version:        $VERSION/" cranix-python-ms365.spec
 
 echo $VERSION > VERSION
 git commit -a -m "Release v$VERSION"
